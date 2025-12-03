@@ -53,9 +53,12 @@ fn main() {
     println!("2.current value is :{}",x);
 
     let spaces = "     ";
+    //这里会重新赋值
     let spaces = spaces.len();
     
+
     let mut spaces = "     ";
+    //这里不会重新赋值 报错expected `&str`, found `usize`
     spaces = spaces.len();
 
 }
