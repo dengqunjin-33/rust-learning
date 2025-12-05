@@ -50,5 +50,38 @@ fn main(){
     // //输出 15 91.2 120 1.771875 3
     // println!("{} {} {} {} {}",sum,diff,produce,quotient,remainder);
 
-    
+    // let y = {
+    //     let x = 3;
+    //     x + 5
+    // };
+    // println!("the value is {}",y);
+    // let y = {
+    //     let x = 3;
+    //     //这里会报错 因为表达式不能包含分号,也不能加return
+    //     x + 5;
+    // };
+    // println!("the value is {}",y);
+
+    // let a = add(10, 5);
+    // println!("a value is {}",a)
+
+    // let x = plus_or_minus(5);
+    // println!("number is {}",x);
+    // let x = plus_or_minus(6);
+    // println!("number is {}",x);
+
+
+
 }
+
+fn add(i:i32,j:i32) -> i32{
+    i+j
+}
+
+fn plus_or_minus(x:i32) -> i32{
+    if x > 5 {
+        return x - 5;
+    }
+    x + 5
+}
+
